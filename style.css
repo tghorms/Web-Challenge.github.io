@@ -1,0 +1,60 @@
+body{
+    background: rgb(215, 250, 250);
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(250, 250, 250);
+}
+.left_box{
+    background: white;
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 10px
+}
+
+.right_box{
+    background: white;
+    margin-top: 15px;
+    margin-bottom: 100%;
+    padding: 15px;
+    border-radius: 10px
+}
+
+.data_box{
+    background: white;
+    padding: 30px;
+    margin-top: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 5px
+}
+
+.title_viz{
+    padding: 0px;
+}
+
+.footer{
+    background-color: rgb(250, 250, 250);
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-top-width: 3px;
+    color: rgb(78, 78, 78);
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0; 
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar{
+        background-color: lightsalmon;
+    }
+    body {
+        background-color: rgb(233, 229, 229)
+    }
+    .footer{
+        background-color:  white)
+    }
+}
