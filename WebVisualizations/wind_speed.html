@@ -1,0 +1,123 @@
+<!--Creating a home page for the visualization website-->
+
+<!--CReating the Doctype with header and imports-->
+
+<!Doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wind Speed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <!--Creating the navigation bar on the home page custom colors-->
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <a class="navbar-brand" href="landing_page.html">
+                    <img src="images/sun.png" width="50" height="50" alt="cloud">
+                </a>
+                <a class="nav-link">
+                    <span class="navbar-text">Wind Speed</span>
+                </a>
+                <ul class="navbar-nav ml-auto dropdown">
+                    <!--drop down menu and movign everthing on the right side-->
+                    <li class="nav-item">
+                        <!--Creating the clickable links-->
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                            href="#">
+                            <!--Classifing the dropdown links-->
+                            Plots
+                            <span class="caret"></span>
+                            <!--adding the arrow to the dropdown menu-->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                            <a class="dropdown-item" href="landing_page.html">Latitude vs. X</a>
+                            <hr>
+                            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-6">
+                <div class="left_box">
+                    <h2 class="title">Wind Speed</h2>
+                    <hr>
+
+                    <img src="images/Fig4.png" class="img img-responsive" width="80%" alt="Wind Speed Graph">
+                    <p>The data shows Wind Speed does not show a strong correlation to latitude. The vizualization
+                        above shows a great variety of Wind Speed percentages at different latitdues. Therefore, we
+                        cannot conclude that there is a conclusive pattern between Wind Speed and latitude.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-6">
+                <div class="right_box">
+                    <h3 class="title_viz">Visualization</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-3">
+                            <a href="max_temp.html">
+                                <img class="panel" src="images/Fig1.png" width="100%">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-3">
+                            <a href="humidity.html">
+                                <img class="panel" src="images/Fig2.png" width="100%">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-3">
+                            <a href="cloudiness.html">
+                                <img class="panel" src="images/Fig3.png" width="100%">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-3">
+                            <a href="wind_speed.html">
+                                <img class="panel" src="images/Fig4.png" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>
+            <div class="footer">Copyright &copy; Thomas Ghormley 2019</div>
+        </center>
+    </footer>
+
+</body>
+
+</html>
